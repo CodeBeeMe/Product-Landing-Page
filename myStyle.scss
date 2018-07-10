@@ -1,0 +1,235 @@
+/* !Date:09.07.2018 Copyright ©2018 SCSS code by Cătălin Anghel-Ursu @Madness2aMaze (https://codepen.io/Madness2aMaze)
+- All Rights Reserved!
+
+MIT License
+
+Copyright (c) 2018 Cătălin Anghel-Ursu (https://github.com/Madness2aMaze/Product-Landing-Page)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. */
+
+@mixin radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-shadow($x, $y, $blur, $c) {
+  -webkit-box-shadow: $x $y $blur $c;
+  -moz-box-shadow: $x $y $blur $c;
+  -ms-box-shadow: $x $y $blur $c;
+  box-shadow: $x $y $blur $c;
+}
+
+@media screen and (min-width: 480px) {
+    #content{
+        background: lightgreen;
+    }
+}
+
+#nav-bar {
+  padding: 0;
+  border-bottom: 1px solid #26adef;
+}
+
+.navbar-brand {
+  display: flex;
+  font-family: 'Audiowide', cursive; 
+  //font-family: 'Faster One', cursive;
+  margin-left: 26.5%;
+  .fa-snowflake {
+    margin-top: 7px;
+    color: #26adef;
+    font-size: 38px;
+  }
+}
+
+.cool {
+  text-shadow: 1px 1px 1px #000;
+  margin-left: -128px;
+  margin-right: 100px;
+  h6 {
+    color: #26adef;
+    //font-size: 22px;
+  }
+}
+
+.breeze {
+  text-shadow: 1px 1px 1px #000;
+  //margin-top: 6px;
+}
+
+.container-fluid {
+  padding: 0px;  
+}
+
+#content {
+  background: linear-gradient(to right, #8e9eab, #eef2f3, #eef2f3, #8e9eab);
+  //background-color: #afb0ae;
+}
+
+
+#animation {  
+  margin: 0 auto;
+  background-image: url("https://res.cloudinary.com/indiegogo-media-prod-cld/image/upload/c_limit,w_695/v1431068162/sdxqctnr2vuk91yun4ap.gif");
+  background-repeat: no-repeat;
+  background-size: 920px 500px;  
+  height: 500px;
+  width: 920px;
+  margin-top: 67px;
+  opacity: .9;
+}
+
+#features {
+  background: url("https://cdn.stocksnap.io/img-thumbs/960w/QW68ITZ35G.jpg");
+  background-size: cover;
+  //background: #fff; 
+  color: #343a40;   
+  margin: 0 auto;
+  width: 920px;
+  padding: 30px;  
+  h3 {
+    //color: #343a40;
+  }  
+}
+
+#demo {  
+  display: flex;
+  margin: 0 auto;  
+  width: 950px;
+  height: 518px;
+  //margin-left: 25%;
+}
+
+#subscribe {
+  background: url("https://cdn.stocksnap.io/img-thumbs/960w/GWD8A8XGIL.jpg");
+  background-size: cover;
+  width: 920px;
+  height: 450px;
+  margin: 0 auto;
+  padding: 30px;
+  form {
+    padding-bottom: 30px;    
+  }
+  label {
+    color: #fff; //#939496;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 1px #222;
+  }
+  #email {    
+    width: 300px;
+  }
+  #submit {
+    background: #26adef;
+  }
+  #submit:hover {
+    background: #118bc6;
+  }
+}
+
+.social {
+  //border-top: 1px solid #ced4da;
+  //margin-top: 30px;
+  padding: 30px;
+}
+
+#fb, #tw, #in {
+  color: #fff; //#ced4da;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  padding: 5px;
+  border: 1px solid #fff; //#ced4da;
+  @include radius(25px);
+  transition: .2s;
+  cursor: pointer;
+}
+
+#fb:hover, #tw:hover, #in:hover {
+  color: #26adef;
+  border: 1px solid #26adef;
+  transition: .2s;
+}
+
+.low {
+  padding-top: 30px;
+  //border-top: 1px solid #ced4da;
+  margin: 0 auto;
+  font-family: 'Audiowide', cursive;
+  .fa-snowflake {
+    margin-top: 7px;
+    color: #26adef;
+    font-size: 38px;
+  }
+}
+
+.cool-low {
+  text-shadow: 1px 1px 1px #000;
+  margin-left: -128px;
+  margin-right: 100px;
+  h6 {
+    color: #26adef;
+    //font-size: 22px;
+  }
+}
+
+.breeze-low {
+  color: #343a40;
+  text-shadow: 1px 1px 1px #000;
+  //margin-top: 6px;
+}
+
+.copyright {
+  font-size: 14px;
+  margin: 0 auto;
+  color: #ced4da;
+}
+
+.label1, .label2, .label3 {
+  background-color: #343a40;
+  padding: 5px 0px 5px 0px;
+  h2 {
+    color: #26adef;
+  }
+}
+
+.icon {
+  color: #26adef;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#footer {
+  background: rgba(52, 58, 64, 1);
+  h6 {
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #999;
+    a {
+      color: #118bc6;
+      transition: 0.2s;
+    }
+    a:hover {
+      color: #26adef;
+      transition: 0.2s;
+      text-decoration: none;
+    }
+  }
+}
+
